@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             outputImage.src = canvas.toDataURL();
             outputContainer.style.display = "block";
+            downloadButton.style.display = "block";
+            downloadButton.addEventListener("click", () => {
+              const downloadLink = document.createElement("a");
+              downloadLink.href = canvas.toDataURL("image/png");
+              downloadLink.download = "watermarked_image.png";
+              downloadLink.click();
+            });
           };
         };
       };

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Insert PWW Logoz</title>
+  <title>Insert PWW Logo</title>
 </head>
 
 <body>
@@ -13,18 +13,19 @@
   <input type="file" id="imageInput" accept="image/*">
   <div>
     <button class="positionButton" data-position="bottom-left" data-size="small">Bottom Left (Small)</button>
-    <button class="positionButton" data-position="top-left" data-size="small">Top Left (Small)</button>
     <button class="positionButton" data-position="bottom-left" data-size="medium">Bottom Left (Medium)</button>
+    <button class="positionButton" data-position="top-left" data-size="small">Top Left (Small)</button>
     <button class="positionButton" data-position="top-left" data-size="medium">Top Left (Medium)</button>
     <button class="positionButton" data-position="bottom-right" data-size="small">Bottom Right (Small)</button>
-    <button class="positionButton" data-position="top-right" data-size="small">Top Right (Small)</button>
     <button class="positionButton" data-position="bottom-right" data-size="medium">Bottom Right (Medium)</button>
+    <button class="positionButton" data-position="top-right" data-size="small">Top Right (Small)</button>
     <button class="positionButton" data-position="top-right" data-size="medium">Top Right (Medium)</button>
     <button class="positionButton" data-position="center" data-size="small">Center (Small)</button>
     <button class="positionButton" data-position="center" data-size="medium">Center (Medium)</button>
   </div>
   <div id="outputContainer">
     <img id="outputImage" alt="Output Image">
+    <button id="downloadButton" style="display: none;">Download Image</button>
   </div>
   <script src="script.js"></script>
 </body>

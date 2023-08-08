@@ -27,7 +27,7 @@ body {
     max-width: 100%;
 }
 
-.positionButton {
+.positionButton, #downloadButton {
     margin: 5px;
     padding: 5px 10px;
     background-color: #007bff;
