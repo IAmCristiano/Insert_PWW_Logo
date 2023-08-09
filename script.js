@@ -3,12 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const positionButtons = document.querySelectorAll(".positionButton");
   const outputContainer = document.getElementById("outputContainer");
   const outputImage = document.getElementById("outputImage");
+  const toggleModeButton = document.getElementById("toggleModeButton");
 
   positionButtons.forEach(button => {
     button.addEventListener("click", function () {
       applyWatermark(button.dataset.position, button.dataset.size);
     });
   });
+
+  toggleModeButton.addEventListener("click", toggleMode);
+
+  function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+  }
 
   function applyWatermark(position, size) {
     const selectedImage = imageInput.files[0];
