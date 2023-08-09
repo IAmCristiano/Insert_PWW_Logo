@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           context.drawImage(img, 0, 0);
 
           const logo = new Image();
-          logo.src = "logo.png"; // Path to your logo image
+          logo.src = "logo.png";
           let logoSize, padding;
 
           switch (size) {
