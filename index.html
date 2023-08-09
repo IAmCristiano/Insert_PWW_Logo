@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
   <title>Insert PWW Logo</title>
 </head>
 
 <body>
-  <div>Select an image from your device, then choose the logo's position.</div><br>
+  <div id="infos">Select an image from your device, then choose the logo's position.</div><br>
   <input type="file" id="imageInput" accept="image/*">
-  <div>
+  <div class="button-container">
     <button class="positionButton" data-position="bottom-left" data-size="small">Bottom Left (Small)</button>
-    <button class="positionButton" data-position="bottom-left" data-size="medium">Bottom Left (Medium)</button>
     <button class="positionButton" data-position="top-left" data-size="small">Top Left (Small)</button>
-    <button class="positionButton" data-position="top-left" data-size="medium">Top Left (Medium)</button>
     <button class="positionButton" data-position="bottom-right" data-size="small">Bottom Right (Small)</button>
-    <button class="positionButton" data-position="bottom-right" data-size="medium">Bottom Right (Medium)</button>
     <button class="positionButton" data-position="top-right" data-size="small">Top Right (Small)</button>
-    <button class="positionButton" data-position="top-right" data-size="medium">Top Right (Medium)</button>
     <button class="positionButton" data-position="center" data-size="small">Center (Small)</button>
+  </div>
+  <div class="button-container">
+    <button class="positionButton" data-position="bottom-left" data-size="medium">Bottom Left (Medium)</button>
+    <button class="positionButton" data-position="top-left" data-size="medium">Top Left (Medium)</button>
+    <button class="positionButton" data-position="bottom-right" data-size="medium">Bottom Right (Medium)</button>
+    <button class="positionButton" data-position="top-right" data-size="medium">Top Right (Medium)</button>
     <button class="positionButton" data-position="center" data-size="medium">Center (Medium)</button>
   </div>
   <div id="outputContainer">

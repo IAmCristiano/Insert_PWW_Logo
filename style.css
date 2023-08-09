@@ -6,6 +6,10 @@ body {
     padding: 20px;
 }
 
+#infos {
+    font-weight: bold;
+}
+
 #imageInput {
     margin-bottom: 10px;
 }
@@ -27,11 +31,37 @@ body {
     max-width: 100%;
 }
 
-.positionButton, #downloadButton {
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.positionButton {
+    flex: 0 0 calc(20% - 10px);
+    /* Adjust the width as needed */
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#downloadButton {
     margin: 5px;
     padding: 5px 10px;
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .positionButton {
+        padding: 5px;
+    }
 }
