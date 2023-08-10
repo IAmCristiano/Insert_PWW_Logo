@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const toggleModeButton = document.getElementById("toggleModeButton");
   const imageInput = document.getElementById("imageInput");
   const positionButtons = document.querySelectorAll(".positionButton");
   const outputContainer = document.getElementById("outputContainer");
   const outputImage = document.getElementById("outputImage");
-  const toggleModeButton = document.getElementById("toggleModeButton");
+  const downloadButton = document.getElementById("downloadButton");
 
   positionButtons.forEach(button => {
     button.addEventListener("click", function () {
@@ -12,6 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   toggleModeButton.addEventListener("click", toggleMode);
+
+  downloadButton.addEventListener("click", () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = outputImage.src;
+    downloadLink.download = "watermarked_image.png";
+    downloadLink.click();
+  });
 
   function toggleMode() {
     document.body.classList.toggle("dark-mode");
@@ -80,12 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
             outputImage.src = canvas.toDataURL();
             outputContainer.style.display = "block";
             downloadButton.style.display = "block";
-            downloadButton.addEventListener("click", () => {
-              const downloadLink = document.createElement("a");
-              downloadLink.href = canvas.toDataURL("image/png");
-              downloadLink.download = "watermarked_image.png";
-              downloadLink.click();
-            });
           };
         };
       };
