@@ -20,18 +20,11 @@ body {
 
 #infos {
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #imageInput {
     margin-bottom: 10px;
-}
-
-#applyWatermark {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 5px 10px;
 }
 
 #outputContainer {
@@ -47,18 +40,32 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 10px;
+    width: 100%;
 }
 
-.positionButton {
-    background-color: #007bff;
+.topPositionButton {
+    background-color: darkblue;
+}
+
+.centerPositionButton {
+    background-color: darkred;
+}
+
+.bottomPositionButton {
+    background-color: darkgreen;
+}
+
+.topPositionButton, .centerPositionButton, .bottomPositionButton {
     border: none;
     color: white;
     cursor: pointer;
-    flex: 0 0 calc(20% - 10px); /* Adjust the width as needed */
+    flex: 0 0 calc(16.66% - 15px); /* Adjust the width for 6 buttons in a row */
     margin: 5px;
-    padding: 10px;
+    padding: 8px; /* Adjust padding for buttons's size */
     text-align: center;
+    width: 100%;
 }
 
 #downloadButton {
@@ -66,15 +73,15 @@ body {
     border: none;
     color: white;
     cursor: pointer;
-    margin: 5px;
+    margin-top: 10px;
     padding: 5px 10px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
-
     .mode-toggle {
         right: 10px;
-        top: 25px; /* Adjust the top position for smaller screens */
+        top: 25px;
     }
 
     .positionButton {

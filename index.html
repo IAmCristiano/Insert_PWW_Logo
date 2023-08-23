@@ -16,18 +16,24 @@
   <div id="infos">Select an image from your device, then choose the logo's position.</div><br>
   <input type="file" id="imageInput" accept="image/*">
   <div class="button-container">
-    <button class="positionButton" data-position="bottom-left" data-size="small">Bottom Left (Small)</button>
-    <button class="positionButton" data-position="top-left" data-size="small">Top Left (Small)</button>
-    <button class="positionButton" data-position="bottom-right" data-size="small">Bottom Right (Small)</button>
-    <button class="positionButton" data-position="top-right" data-size="small">Top Right (Small)</button>
-    <button class="positionButton" data-position="center" data-size="small">Center (Small)</button>
+    <button class="topPositionButton" data-position="top-left" data-size="small">Top Left (Small)</button>
+    <button class="topPositionButton" data-position="top-left" data-size="medium">Top Left (Medium)</button>
+    <button class="topPositionButton" data-position="top-right" data-size="small">Top Right (Small)</button>
+    <button class="topPositionButton" data-position="top-right" data-size="medium">Top Right (Medium)</button>
   </div>
   <div class="button-container">
-    <button class="positionButton" data-position="bottom-left" data-size="medium">Bottom Left (Medium)</button>
-    <button class="positionButton" data-position="top-left" data-size="medium">Top Left (Medium)</button>
-    <button class="positionButton" data-position="bottom-right" data-size="medium">Bottom Right (Medium)</button>
-    <button class="positionButton" data-position="top-right" data-size="medium">Top Right (Medium)</button>
-    <button class="positionButton" data-position="center" data-size="medium">Center (Medium)</button>
+    <button class="centerPositionButton" data-position="center-left" data-size="small">Center Left (Small)</button>
+    <button class="centerPositionButton" data-position="center-left" data-size="medium">Center Left (Medium)</button>
+    <button class="centerPositionButton" data-position="center" data-size="small">Center (Small)</button>
+    <button class="centerPositionButton" data-position="center" data-size="medium">Center (Medium)</button>
+    <button class="centerPositionButton" data-position="center-right" data-size="small">Center Right (Small)</button>
+    <button class="centerPositionButton" data-position="center-right" data-size="medium">Center Right (Medium)</button>
+  </div>
+  <div class="button-container">
+    <button class="bottomPositionButton" data-position="bottom-left" data-size="small">Bottom Left (Small)</button>
+    <button class="bottomPositionButton" data-position="bottom-left" data-size="medium">Bottom Left (Medium)</button>
+    <button class="bottomPositionButton" data-position="bottom-right" data-size="small">Bottom Right (Small)</button>
+    <button class="bottomPositionButton" data-position="bottom-right" data-size="medium">Bottom Right (Medium)</button>
   </div>
   <div id="outputContainer">
     <img id="outputImage" alt="Output Image">

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggleModeButton = document.getElementById("toggleModeButton");
   const imageInput = document.getElementById("imageInput");
-  const positionButtons = document.querySelectorAll(".positionButton");
+  const positionButtons = document.querySelectorAll(".topPositionButton, .centerPositionButton, .bottomPositionButton");
   const outputContainer = document.getElementById("outputContainer");
   const outputImage = document.getElementById("outputImage");
   const downloadButton = document.getElementById("downloadButton");
@@ -79,6 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;
               case "center":
                 logoX = (canvas.width - logoSize) / 2;
+                logoY = (canvas.height - logoSize) / 2;
+                break;
+              case "center-left":
+                logoX = padding;
+                logoY = (canvas.height - logoSize) / 2;
+                break;
+              case "center-right":
+                logoX = canvas.width - logoSize - padding;
                 logoY = (canvas.height - logoSize) / 2;
                 break;
             }
